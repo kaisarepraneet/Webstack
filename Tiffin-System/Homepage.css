@@ -1,0 +1,131 @@
+body
+{
+	    background: linear-gradient(#3399ff,#ccffff);
+	    
+	    background-attachment: fixed;
+}
+
+header
+{
+	width:98%;
+	height: auto;
+	border:3px solid #e60000;
+	margin-left: 1%;
+	border-radius:2em;
+	background-color: #f2f2f2;
+	box-shadow: 5px 8px #404040; 
+}
+
+h1
+{
+	color: #e60000;
+	font-size: 2em;
+	font-family: "Times New Roman", Times, serif;
+}
+
+nav
+{
+	margin-top: 1%;
+	width: 98%;
+	height: auto;
+	margin-left: 1%;
+	border:2px solid black;
+	border-radius:1.2em;
+
+}
+
+ul 
+{
+	padding-left: 20px;
+	border-radius:1em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #404040;
+}
+
+li
+{
+  float: left;
+  font-size: 1.5em;
+}
+
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover 
+{
+  background-color: #4CAF50;
+}
+
+section
+{
+	width: 98%;
+	height: auto;
+	margin-left: 1%;
+	margin-top: 0.7%;
+	border-radius: 2em;
+	background-color: #f2f2f2;
+	border:3px solid #e60000;
+
+}
+
+.div-image
+{
+	margin-top: 3%;
+	margin-bottom: 3%;
+	margin-left: -55%;
+	width: 40%;
+	height: auto;
+	
+}
+.div-info
+{
+	float: right;
+	width: 50%;
+	margin-right:3% ;
+	height: auto;
+	margin-top: -29%;
+	
+}
+
+h2
+{
+	font-size: 2.3em;
+	font-family: Cambria,serif;
+	
+	opacity: 0.6; 
+}
+p
+{
+	font-size: 1.5em;
+	text-align: justify;
+	
+
+}
+
+footer
+{
+	width:98%;
+	height: auto;
+	border:3px solid black;
+	margin-left: 1%;
+	border-radius:1em;
+	background-color: #404040;
+	margin-top: 0.7%;
+
+}
+
+footer h3
+{
+	font-size: 1.3em;
+	color: white;
+	text-decoration: underline;
+}
