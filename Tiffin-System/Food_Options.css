@@ -1,0 +1,39 @@
+table
+{
+	margin-top: 1%;
+	margin-bottom: 1%; 	
+}
+
+td
+{
+	padding-left: 5px;
+	margin-left: 10%;
+	width: 38%;
+}
+
+ol
+{
+	padding-left: 20px;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+button
+{
+	align-self: center;
+	height: 2.5em;
+	width: 7em;
+	background-color: green;
+	color: white;
+}
+
+button:hover
+{
+	color: green;
+	background-color: white;
+}
+
+.dish-name
+{
+	font-size: 3em;
+}

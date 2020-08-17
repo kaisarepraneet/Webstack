@@ -45,13 +45,13 @@ ul
 	background-color: #404040;
 }
 
-li
+ul li
 {
   float: left;
   font-size: 1.5em;
 }
 
-li a 
+ul li a 
 {
   display: block;
   color: white;
@@ -60,7 +60,7 @@ li a
   text-decoration: none;
 }
 
-li a:hover 
+ul li a:hover 
 {
   background-color: #4CAF50;
 }
