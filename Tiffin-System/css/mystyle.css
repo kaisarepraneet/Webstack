@@ -1,0 +1,139 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:Century Gothic;
+}
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Background.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+/* Navbar */
+.main{
+	height: 25%;
+}
+.main nav ul
+{
+	float: right;
+	list-style-type: none;
+	margin-top: 2.5%;
+	margin-right: 2%;
+}
+.main nav ul li
+{
+	font-size: 1.2em;
+	display: inline-block;
+}
+.main nav ul li a
+{
+	text-decoration: none;
+	color: #fff;
+	padding: 0.5em;
+	transition: 0.6s ease;
+}
+.main nav ul li a:hover
+{
+	color: #ed6b71;
+}
+
+.main .logo
+{
+	float: left;
+	padding-left: 2em;
+
+}
+
+/* Section */
+.content
+{
+	text-align: center;
+	
+}
+.content h1{
+     color: #fff;
+     font-size: 4em;
+     font-family: cursive;
+}
+
+.content p
+{
+	margin-top: 3%;
+	width:80%;
+	font-weight: bold;
+	padding-left:10%;
+	text-align: justify;
+	color: #ebedeb;
+	font-size: 2em;
+    font-family: cursive;
+
+}
+
+/*                            Menu.html                     */
+
+
+.menu
+{
+	margin-top: 12%;
+}
+
+table
+{
+	margin-bottom: 1%; 	
+	width: 100%;
+}
+
+ol
+{
+	margin-top: 5%;
+	padding-top: 2%;
+	padding-left: 5%;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+ol li
+{
+	color: white;
+}
+
+td img
+{
+	border:2px solid white;
+	margin-top: 5%;
+}
+
+td
+{
+	padding-left: 8%;
+	width: auto;
+}
+
+
+
+button
+{
+	height: 3em;
+	width: 7em;
+	margin-top: 10%;
+	margin-left: 20%;
+	background-color: green;
+	color: white;
+	border: 2px solid white;
+}
+
+button:hover
+{
+	animation-delay: 2s;
+	color: green;
+	background-color: white;
+	border:3px solid green;
+
+}
+
+
+.dish-name
+{
+	font-size: 1.5em;
+	color: white;
+}
