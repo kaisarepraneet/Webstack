@@ -8,9 +8,11 @@ body{
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 }
 /* Navbar */
-.main{
+.main
+{
 	height: 25%;
 }
 .main nav ul
@@ -22,7 +24,7 @@ body{
 }
 .main nav ul li
 {
-	font-size: 1.2em;
+	font-size: 1.3em;
 	display: inline-block;
 }
 .main nav ul li a
@@ -136,4 +138,107 @@ button:hover
 {
 	font-size: 1.5em;
 	color: white;
+}
+
+/*                       AboutUs.html                */
+
+.head1
+{
+	margin-top: 10%;
+	color: #ebedeb;
+	font-size: 4em;
+    font-family: cursive;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.head2
+{
+	margin-top: 5%;
+	color: #ebedeb;
+	font-size: 4em;
+    font-family: cursive;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.outer
+{
+	width: auto;
+	height: 70%;
+	margin-top: 1%;
+}
+iframe
+{
+	width: 45%;
+	margin-top: 3%;
+	margin-left: 3%;
+	float: left;
+	height: 27em;
+	border: 2px solid grey;
+}
+.para1
+{
+	width: 40%;
+	float: right;
+	margin-top: 3%;
+	margin-right: 4%;
+	height: auto;
+}
+
+.para2
+{
+	width: 40%;
+	float: left;
+	margin-top: 3%;
+	margin-left: 4%;
+	height: auto;
+}
+
+.para3
+{
+	width: 40%;
+	float: right;
+	margin-top: 3%;
+	margin-right: 4%;
+	height: auto;
+}
+
+.para1,.para2,.para3 p
+{
+	font-weight: bold;
+	text-align: justify;
+	color: #ebedeb;
+	font-size: 1.9em;
+    font-family: cursive;
+}
+
+video
+{
+	float: right;
+	margin-right: 4%;
+	margin-top: 3%;
+}
+
+embed
+{
+	width: 45%;
+	margin-top: 3%;
+	margin-left: 3%;
+	float: left;
+	height: 27em;
+	border: 2px solid grey;
+}
+
+.btn-audio
+{
+	width: 20%;
+	height:10%;
+	font-size: 2em;
+	font-family:Century Gothic;
+	border-radius: 2em;
+	margin-top: 3%;
+	margin-bottom:5%;
+	margin-left: 40%;
+	color: white; 
 }
