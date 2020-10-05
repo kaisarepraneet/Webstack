@@ -168,6 +168,14 @@ button:hover
 	height: 70%;
 	margin-top: 1%;
 }
+
+.slider
+{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 3%;
+}
+
 iframe
 {
 	width: 45%;
@@ -241,4 +249,10 @@ embed
 	margin-bottom:5%;
 	margin-left: 40%;
 	color: white; 
+}
+
+.item h2
+{
+	color: white;
+	font-family: Century Gothic;
 }
