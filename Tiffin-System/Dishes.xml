@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="DishesStyle.xsl"?>
+<Dishes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="DishesSchema.xsd">
+	
+	<Dish>
+		<Name>Gujarati Thali</Name>
+		<Item_1>3 Roti/Puri</Item_1>
+		<Item_2>Gujarati Daal</Item_2>
+		<Item_3>Samosa</Item_3>
+		<Item_4>Rice</Item_4>
+		<Price>100 Rs.</Price>
+	</Dish>
+
+	<Dish>
+		<Name>Punjabi Thali</Name>
+		<Item_1>2 Tandoori Roti</Item_1>
+		<Item_2>Panner Sabji</Item_2>
+		<Item_3>Mix Veg.</Item_3>
+		<Item_4>Daal Fry-Jeera Rice</Item_4>
+		<Price>140 Rs.</Price>
+	</Dish>
+
+	<Dish>
+		<Name>South Indian Thali</Name>
+		<Item_1>3 Chapati/Puri</Item_1>
+		<Item_2>Sambhar</Item_2>
+		<Item_3>Rice</Item_3>
+		<Item_4>Curd Rice</Item_4>
+		<Price>120 Rs.</Price>
+	</Dish>
+
+	<Dish>
+		<Name>Maharastrian Thali</Name>
+		<Item_1>2 Tandoori Roti/Puri</Item_1>
+		<Item_2>Daal Tadka</Item_2>
+		<Item_3>Chicken Gravy</Item_3>
+		<Item_4>Rice</Item_4>
+		<Price>200 Rs.</Price>
+	</Dish>
+
+</Dishes>

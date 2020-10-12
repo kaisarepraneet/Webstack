@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="Dishes">
+		<xsd:complexType>
+		
+		<xsd:element name="Dish">
+			<xsd:complexType>
+				<xsd:sequence>
+					<xsd:element name="Name" type="xs:string"/>
+					<xsd:element name="Item_1" type="xs:string"/>
+					<xsd:element name="Item_2" type="xs:string"/>
+					<xsd:element name="Item_3" type="xs:string"/>
+					<xsd:element name="Item_4" type="xs:string"/>
+					<xsd:element name="Price" type="xs:integer">
+						<xsd:simpleType>
+    							<xsd:restriction base="xs:string">
+      								<xsd:enumeration value="100"/>
+      								<xsd:enumeration value="120"/>
+      								<xsd:enumeration value="200"/>
+      								<xsd:enumeration value="140"/>
+    							</xsd:restriction>
+  						</xsd:simpleType>	
+					</xsd:element>
+				</xsd:sequence>	
+			</xsd:complexType>
+		</xsd:element>
+
+	</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
