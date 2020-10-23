@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="Company">
+		<xsd:complexType>
+            <xsd:sequence>		
+            <xsd:element name="Employee">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="EmpName" type="xs:string"/>
+                        <xsd:element name="EmpAge" type="xs:integer"/>
+                        <xsd:element name="EmpSalary">
+                            <xs:simpletype>
+                                <xs:restriction base:"xs:double">
+                                    <xs:minInclusive value="50000"/>
+                                    <xs:maxInclusive value="200000"/>
+                                </xs:restriction>
+                            </xs:simpletype>
+                        </xs:element>
+                        <xsd:element name="EmpEmailId" type="xs:string"/>
+                        <xsd:element name="EmpPhonenum" type="xs:string"/>
+                        <xsd:element name="EmpDesignation" type="xs:string"/>					
+                    </xsd:sequence>	
+                </xsd:complexType>
+            </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+	</xsd:element>
+</xsd:schema>
