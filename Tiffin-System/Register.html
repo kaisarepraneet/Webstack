@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>PK Tiffin Service</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css\mystyle.css">	
+</head>
+
+<body>
+    <script>
+        function validate_fileupload(fileName)
+        {
+            var file_extension = fileName.split('.').pop().toLowerCase(); 
+
+            if(file_extension != "jpg")
+            {
+                alert("Invalid file Format.Only JPG allowed.");
+                document.getElementById("File_proof").value="";
+            }
+        }
+        function validate()
+        {
+            var ele = document.getElementsByName('Gender');
+            var cnt=0;
+            var mailformat = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]$/ ;
+            var phoneformat=/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/ ;
+            
+            for(i = 0; i < ele.length; i++)
+            { 
+                if(ele[i].checked) 
+                cnt=cnt+1; 
+            } 
+            if((document.getElementById("Name_Text").value%10 == 0) || (document.getElementById("Name_Text").value == ""))
+            {
+                alert("Enter Name Correctly.");
+                document.getElementById("Name_Text").style.border="2px solid red";
+            }
+            else if(cnt==0)
+            {
+                document.getElementById("Name_Text").style.border="none";
+                alert("Please select a Gender");
+            }
+            else if(document.getElementById("Address_Text").value == "")
+            {
+                document.getElementById("Address_Text").style.border="2px solid red";
+                alert("Please enter your Address.");
+            }
+            else if(!(mailformat.test(document.getElementById("Email_Text").value)))
+            {
+                document.getElementById("Address_Text").style.border="none";
+                alert("EmailId format incorrect.");
+            }   
+            else if(!(phoneformat.test(document.getElementById("Phone_Text").value)))
+            {
+                alert("Enter Valid Phone No.");
+            }
+            else if(document.getElementById("File_proof").value == "")
+            {
+                alert("Please add a Profile photo.");
+            }
+            else
+            {
+                alert("All details Ok.");
+            }
+        }
+    </script>    
+	<header class="main">
+		<div class="logo">
+			<a href="index.html"><img src="Logo.png" height="140" width="140" /></a>
+		</div>
+		<nav>
+			<ul>
+				<li class="active"><a href="index.html">HOME</a></li>
+				<li><a href="Menu.html">MENU</a></li>
+				<li><a href="AboutUs.html">ABOUT US</a></li>
+				<li><a href="#">CONTACT US</a></li>
+				<li><a href="Register.html">SIGN UP</a></li>
+			</ul>
+		</nav>
+    </header>
+    <section>
+    <h2 class="header">Registration Form</h2>
+    <div class="container">
+        <form action="#">
+            <table>
+                <tr>
+                    <td><span class="lbl">Name</span></td>
+                    <td><input type="text" id="Name_Text" placeholder="Name"/></td>
+                </tr>
+                <tr>
+                    <td><span class="lbl">Gender</span></td>
+                    <td>
+                        <input type="radio" id="GN_m" name="Gender" value="Male">
+                        <label for="GN_m">Male</label>
+                        <input type="radio" id="GN_f" name="Gender" value="Female">
+                        <label for="GN_f">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="lbl">Address</span></td>
+                    <td><textarea id="Address_Text" placeholder="Address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><span class="lbl">Email ID</span></td>
+                    <td><input type="text" id="Email_Text" placeholder="Eg: abc@example.com"/></td>
+                </tr>
+                <tr>
+                    <td><span class="lbl">Phone No.</span></td>
+                    <td><input type="text" id="Phone_Text" placeholder="Phone No."/></td>
+                </tr>
+                <tr>
+                    <td><span class="lbl">Profile Photo</span></td>
+                    <td><input class="file" type="file" id="File_proof" onchange="validate_fileupload(this.value)"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="validate()">Submit</button></td>               
+                </tr>
+            </table>
+        </form>
+    </div>
+    </section>
+</body>
+</html>

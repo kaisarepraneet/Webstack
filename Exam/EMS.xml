@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="EMSStyle.xsl"?>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EMSSchema.xsd">
+    <Employee>
+        <EmpName>Praneet Kaisare</EmpName>
+        <EmpAge>20</EmpAge>
+        <EmpSalary>50000</EmpSalary>
+        <EmpEmailId>praneet@gmail.com</EmpEmailId>
+        <EmpPhonenum>+91-9427638635</EmpPhonenum>
+        <EmpDesignation>Manager</EmpDesignation>
+    </Employee>
+    <Employee>
+        <EmpName>Yash Kataria</EmpName>
+        <EmpAge>22</EmpAge>
+        <EmpSalary>45000</EmpSalary>
+        <EmpEmailId>yash@gmail.com</EmpEmailId>
+        <EmpPhonenum>+91-9876543210</EmpPhonenum>
+        <EmpDesignation>Ass. Manager</EmpDesignation>
+    </Employee>
+    <Employee>
+        <EmpName>Kishan Mistry</EmpName>
+        <EmpAge>30</EmpAge>
+        <EmpSalary>60000</EmpSalary>
+        <EmpEmailId>kishan@gmail.com</EmpEmailId>
+        <EmpPhonenum>+91-9876453201</EmpPhonenum>
+        <EmpDesignation>HR Head</EmpDesignation>
+    </Employee>
+</Company>

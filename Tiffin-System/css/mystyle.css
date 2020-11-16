@@ -256,3 +256,46 @@ embed
 	color: white;
 	font-family: Century Gothic;
 }
+
+/*                                     Register.html                                */
+.container
+{
+    width: 53%;
+    margin-left: 28%;
+    margin-top: 2%;
+    height: 100%;
+    border-radius: 2em;
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+.header
+{
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+.lbl,label
+{
+	font-size: 1.5em;
+	color: #ebedeb;
+}
+td
+{
+    width: 50%;
+    padding-top: 2%;
+}
+input,textarea
+{
+	border: none;
+	height: 2em;
+}
+.file
+{
+	color: white;
+}
+.register-submit
+{
+	height: 3em;
+	width: 7em;
+	margin-left: 25%;
+}
