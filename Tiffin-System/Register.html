@@ -31,10 +31,10 @@
                 if(ele[i].checked) 
                 cnt=cnt+1; 
             } 
-            if((document.getElementById("Name_Text").value%10 == 0) || (document.getElementById("Name_Text").value == ""))
+            if(/*(document.getElementById("Name_Text").value%10 == 0) || */(document.getElementById("Name_Text").value == ""))
             {
-                alert("Enter Name Correctly.");
                 document.getElementById("Name_Text").style.border="2px solid red";
+                alert("Enter Name Correctly.");
             }
             else if(cnt==0)
             {
