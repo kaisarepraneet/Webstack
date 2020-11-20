@@ -16,8 +16,8 @@
             {
                 document.cookie="username="+document.getElementById("username").value+";expires=Fri, 01 Jan 2021 23:59:59 UTC";;
                 document.cookie="password="+document.getElementById("password").value;
-                window.location.href("index.html");
                 alert("Login Successfull");
+                location.replace("index.html");
             }
         }
         window.onload=function()
@@ -66,7 +66,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <button class="login-submit" onclick="Setcookie()">Login</button>
+                    <button type="button" class="login-submit" onclick="Setcookie()">Login</button>
                 </td>
             </tr>
         </table>
