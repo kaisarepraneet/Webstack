@@ -46,6 +46,8 @@ body{
 
 }
 
+/*                                    index.html                                   */
+
 /* Section */
 .content
 {
@@ -67,8 +69,27 @@ body{
 	text-align: justify;
 	color: #ebedeb;
 	font-size: 2em;
-    font-family: cursive;
+	font-family: cursive;
+	padding-bottom: 10%;
 
+}
+
+.div-offering
+{
+	width: 99.6%;
+}
+
+.btn-offering
+{
+	width: 30%;
+	height: 3em;
+	font-size: 1.5em;
+	background-color: seagreen;
+	color: seashell;
+	margin-left: 1%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	font-weight: bold;
 }
 
 /*                            Menu.html                     */
@@ -260,34 +281,41 @@ embed
 /*                                     Register.html                                */
 .container
 {
-    width: 53%;
+    width: 45%;
     margin-left: 28%;
-    margin-top: 2%;
-    height: 100%;
+    margin-top: 1%;
+	height: 100%;
+	border: 5px solid thistle;
     border-radius: 2em;
-    padding-top: 1%;
-    padding-bottom: 5%;
+}
+
+.register-table
+{
+	margin-top: 2%;
+	margin-left: 10%;
 }
 .header
 {
-    color: white;
+    color: wheat;
     font-size: 2.5em;
-    text-align: center;
+	margin-left: 40%;
+	
 }
 .lbl,label
 {
 	font-size: 1.5em;
 	color: #ebedeb;
 }
-td
+.container td
 {
-    width: 50%;
+    width: 10%;
     padding-top: 2%;
 }
 input,textarea
 {
 	border: none;
 	height: 2em;
+	width: auto;
 }
 .file
 {
@@ -297,7 +325,11 @@ input,textarea
 {
 	height: 3em;
 	width: 7em;
+	font-size: 1.1em;
 	margin-left: 25%;
+	border-radius: 2em;
+	margin-top: 2%;
+	margin-bottom: 3%;
 }
 
 /*                                        Login.html                                  */
@@ -313,34 +345,35 @@ input,textarea
 	
 }
 
+.login-div
+{
+	border: 5px solid thistle;
+	border-radius: 5em;
+	width: 50%;
+	margin-top: 12%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1.5%;
+	height: auto;
+}
+
 .login-head
 {
 	color: wheat;
-	margin-left: 47%;
-	margin-top: 10%;
+	margin-left: 35%;
 	text-decoration: underline;
 }
 
 .login-table
 {
-	width: 50%;
 	font-size: 1.5em;
 	color: white;
-	border:2px solid red;
-	font-weight: bold;
-	margin-top: 2%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-input[type=checkbox]
-{
-	margin-left: 20%;
+	font-weight: bold;	
 }
 
 .login-table tr td
 {
-	padding-left:20%;
+	padding-left:15%;
 	padding-top: 2%;
 	width: 10%;
 }
@@ -349,7 +382,48 @@ input[type=checkbox]
 {
 	width:5em;
 	height: 2em;
-	margin-left: 30%;
+	margin-left: 35%;
 	margin-bottom: 3%;
 }
+
+.register-link
+{
+	color: tomato;
+	margin-left: 25%;
+	margin-bottom: 5%;
+}
+.register-link:hover
+{
+	color: tomato;
+}
+
+/*                                      DOMparser.html                                 */
   
+.dom-table
+{
+	margin-top: 3%;
+	margin-left: 1%;
+	width:98%;
+	color: wheat;
+	border:3px solid thistle;
+
+}
+
+.dom-table th,.dom-table td
+{
+	border:1px solid thistle;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	padding-left: 1%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+}
+
+.dom-header
+{
+	color: whitesmoke;
+	text-align: center;
+	font-size: 3em;
+	text-decoration: underline;
+}

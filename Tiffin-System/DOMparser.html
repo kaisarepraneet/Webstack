@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <style>
-    table,th,td
-    {
-        margin-top: 5%;
-        margin-left: 15%;
-        border:1px solid red;
-    }
-    th,td
-    {
-        font-size: 1.2em;
-        text-align: center;
-        padding: 30px;
-    }
-    h1
-    {
-        text-align: center;
-    }
+    
 </style>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css\mystyle.css">	
+    <title>Dishes Available</title>
 </head>
 <body>
-    <button type="button" onclick="loadXML()">Dish Details</button>
-    <h1>Dishes Details</h1>
-    <table id="demo"></table>
+    <header class="main">
+		<div class="logo">
+			<a href="index.html"><img src="Logo.png" height="140" width="140" /></a>
+		</div>
+		<nav>
+			<ul>
+				<li class="active"><a href="index.html">HOME</a></li>
+				<li><a href="Menu.html">MENU</a></li>
+				<li><a href="AboutUs.html">ABOUT US</a></li>
+				<li><a href="#">CONTACT US</a></li>
+				<li><a href="Login.html">LOGIN</a></li>
+			</ul>
+		</nav>
+
+	</header>
+    <h1 class="dom-header">Dishes Details</h1>
+    <table id="demo" class="dom-table"></table>
     <script>
+        window.onload=function()
+        {
+            loadXML();
+        }
         function loadXML()
         {
             var xhttp=new XMLHttpRequest();

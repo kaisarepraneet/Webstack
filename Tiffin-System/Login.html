@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>Login Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css\mystyle.css">
     <link rel="stylesheet" type="text/css" href="css\bootstrap.css">
@@ -41,10 +42,14 @@
             }
         }
     </script>
-    <h1 class="login-head">Login</h1>
-    <div>
+    <div class="login-div">
         <form>
         <table class="login-table">
+            <tr>
+                <td colspan="2">
+                    <h1 class="login-head">Login</h1>
+                </td>
+            </tr>
             <tr>
                 <td>Username</td>
                 <td><input class="user" type="text" placeholder="Enter Username" id="username" name="uname" required></td>
@@ -59,14 +64,20 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
                     <input type="checkbox" id="rem_check" checked="checked" name="remember"> Remember me
                 </td>                
             </tr>
             <tr>
                 <td colspan="2">
                     <button type="button" class="login-submit" onclick="Setcookie()">Login</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a href="Register.html" class="register-link">Not Registered? Sign Up</a>
                 </td>
             </tr>
         </table>

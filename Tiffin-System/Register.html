@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>PK Tiffin Service</title>
+	<title>Registration Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css\mystyle.css">	
 </head>
@@ -83,7 +83,7 @@
     <h2 class="header">Registration Form</h2>
     <div class="container">
         <form action="#">
-            <table>
+            <table class="register-table">
                 <tr>
                     <td><span class="lbl">Name</span></td>
                     <td><input type="text" id="Name_Text" placeholder="Name"/></td>
@@ -114,7 +114,9 @@
                     <td><input class="file" type="file" id="File_proof" onchange="validate_fileupload(this.value)"/></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button onclick="validate()">Submit</button></td>               
+                    <td colspan="2">
+                        <button onclick="validate()" class="register-submit">Submit</button>
+                    </td>               
                 </tr>
             </table>
         </form>
