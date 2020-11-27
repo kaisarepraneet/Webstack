@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background: linear-gradient(black, gray)fixed;
+        }
+
+        .container {
+            border: 2px solid aliceblue;
+            width: 90%;
+            margin-top: 3%;
+            margin-left: 5%;
+            height: auto;
+            color: aliceblue;
+        }
+
+        h2 {
+            color: brown;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        table {
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5%;
+            font-size: 1.4em;
+        }
+
+        td {
+            width: 50%;
+            padding: 2%;
+        }
+
+        button {
+            margin-left: 30%;
+            margin-top: 1%;
+            width: 35%;
+            font-size: 1em;
+            background-color: greenyellow;
+            color: black;
+            border: 3px solid black;
+        }
+
+        button:hover {
+            color: greenyellow;
+            background-color: black;
+            border: 3px solid greenyellow;
+        }
+    </style>
+
+    </div>
+</head>
+
+<body>
+    <h2> Techovid Registration</h2>
+    <hr />
+    <div class="container">
+        <table>
+            <tr>
+                <td>
+                    Name :
+                </td>
+                <td>
+                    <input type="text" id="txt_Name" placeholder="Name" onkeypress="return Validatepress(event)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone Number :
+                </td>
+                <td>
+                    <input type="text" id="txt_Phone" placeholder="Phone No." onkeypress="return ValidatePhone(event)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password :
+                </td>
+                <td>
+                    <input type="password" id="txt_Password" placeholder="Password" title="1 Uppercase,1 Lowercase,1 digit,1 special charecter Mandatory.">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email ID :
+                </td>
+                <td>
+                    <input type="text" id="txt_Email" placeholder="Eg:abc@christ.in">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Age :
+                </td>
+                <td>
+                    <input type="text" id="txt_Age" placeholder="Age" onkeypress="return ValidatePhone(event)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Username :
+                </td>
+                <td>
+                    <input type="text" id="txt_Username" placeholder="Username" title="First Letter Capital">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="ValidateInput()">Register</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function Validatepress(e)
+         {
+            var keyCode = (e.keyCode ? e.keyCode : e.which);
+            if ((keyCode > 47) && (keyCode < 58))
+            {
+                alert("Digits not allowed");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        function ValidatePhone(e)
+         {
+            var keyCode = (e.keyCode ? e.keyCode : e.which);
+            if ((keyCode > 47) && (keyCode < 58))
+            {
+                return true;
+            }
+            else
+            {
+                alert("Only digits allowed");
+                return false;
+            }
+        }
+        function storecookies()
+        {
+            document.cookie="username="+document.getElementById("txt_Username").value+";expires=Fri, 01 Jan 2021 23:59:59 UTC";
+            document.cookie="phone="+document.getElementById("txt_Phone").value+";expires=Fri, 01 Jan 2021 23:59:59 UTC";
+            alert("Cookies Stored Successfully.");
+        }
+        function ValidateInput()
+        {
+            var mailformat = /^[a-zA-Z0-9+_.-]+@christ.in$/;
+            var phoneformat=/^[1-9][0-9]{9}/;
+            var usernameformat=/^[A-Z]/;
+            var passwordformat=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/  ;
+            
+            if(document.getElementById("txt_Name").value=="")
+            {
+                alert("Please Enter Name.");
+                document.getElementById("txt_Name").style.border="2px solid red";
+            }
+            else if((!(phoneformat.test(document.getElementById("txt_Phone").value))) || (document.getElementById("txt_Phone").value==""))
+            {
+                alert("Enter Valid Phone No.");
+                document.getElementById("txt_Name").style.border="none";
+                document.getElementById("txt_Phone").style.border="2px solid red";
+            }
+            else if(!(passwordformat.test(document.getElementById("txt_Password").value)))
+            {
+                alert("Enter Valid Password");
+                document.getElementById("txt_Phone").style.border="none";
+            }
+            else if(document.getElementById("txt_Age").value=="")
+            {
+                alert("Enter Age.");
+                document.getElementById("txt_Phone").style.border="none";
+                document.getElementById("txt_Age").style.border="2px solid red";
+            }
+            else if(!(usernameformat.test(document.getElementById("txt_Username").value)))
+            {
+                document.getElementById("txt_Age").style.border="none";
+                document.getElementById("txt_Username").style.border="2px solid red";
+                alert("Enter Valid Username...First letter should be in Uppercase.");
+            }
+            else
+            {
+                storecookies();
+                alert("All details OK....Registered!!!");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

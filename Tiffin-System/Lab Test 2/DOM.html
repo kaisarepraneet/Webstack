@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<style>
+    
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <title>Student Details</title>
+</head>
+<body>
+    
+    <h1>Student Details</h1>
+    <table id="tbl" ></table>
+    <script>
+        window.onload=function()
+        {
+            loadXML();
+        }
+        function loadXML()
+        {
+            var xhttp=new XMLHttpRequest();
+            xhttp.onreadystatechange=function()
+            {
+                if(this.readyState==4&&this.status==200)
+                {
+                    myFunction(this);
+                }
+            };
+            xhttp.open("GET","Student.xml",false);
+            xhttp.send();
+        }
+        function myFunction(xml)
+        {
+            var i;
+            var xmlDoc=xml.responseXML;
+            var t="<tr>"
+            +"<th>NAME</th>"
+            +"<th>College</th>";
+            var x=xmlDoc.getElementsByTagName("Student");
+            for(i=0;i<x.length;i++)
+            {
+                t +="<tr><td>" +
+                x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("College")[0].childNodes[0].nodeValue +
+                "</td></tr>";
+            }
+            document.getElementById("tbl").innerHTML=t;
+        }
+    </script>
+</body>
+</html>
