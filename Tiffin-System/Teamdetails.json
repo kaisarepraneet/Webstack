@@ -1,0 +1,40 @@
+{
+    "TeamDetails" :
+    [
+        {
+            "Name":"Pulkit",
+            "Age":21,
+            "Address":"Kadodara",
+            "State":"Gujarat",
+            "City":"Surat",
+            "Phone":9898826290
+        },
+        {
+            "Name":"Kishan",
+            "Age":21,
+            "Address":"Valsad",
+            "State":"Gujarat",
+            "City":"Valsad",
+            "Phone":9898233232
+        },
+        {
+            "Name":"Yash",
+            "Age":21,
+            "Address":"Vapi",
+            "State":"Gujarat",
+            "City":"Vapi",
+            "Phone":9998480707
+        },
+        {
+            "Name":"Praneet",
+            "Age":21,
+            "Address":"Kakrapar",
+            "State":"Gujarat",
+            "City":"Vyara",
+            "Phone":7878818500
+        }
+    ]
+}
+
+
+    

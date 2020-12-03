@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="css\mystyle.css">
+    <link rel="stylesheet" type="text/css" href="css\bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <header class="main">
+        <div class="logo">
+            <a href="index.html"><img src="Logo.png" height="140" width="140" /></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="Menu.html">MENU</a></li>
+                <li><a href="AboutUs.html">ABOUT US</a></li>
+                <li><a href="ContactUs.html">CONTACT US</a></li>
+                <li><a href="Login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="">
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=Christ%20University%2CBangalore&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no">
+                </iframe>
+            </div>
+            <div class="team-content">
+                Our team is consisting of skillful people who organize and mantain the
+                smooth working of all the processes.
+            </div>
+        </div>
+        <div>
+            <h2 class="contact-head">Contact Details</h2>
+            <table id="Team_table"> </table>
+            <script>
+                window.onload=function()
+                {
+                    displaydata();
+                }
+                function displaydata()
+                {
+                    $(function()
+                    {
+                        var tr = "<tr><th>Name</th><th>Age</th><th>Phone</th><th>Address</th></tr>";
+                        $.getJSON("Teamdetails.json", function(data)
+                        {
+                            document.getElementById("Team_table").innerHTML = tr;
+                            $.each(data.TeamDetails, function (i,f) 
+                            {
+                                var tblRow = "<tr><td>" + f.Name + "</td>" +
+                                    "<td>" + f.Age + "</td>" + 
+                                    "<td>" + f.Phone + "</td>" + 
+                                    "<td>" + f.Address + "</td></tr>"
+                                $(tblRow).appendTo("#Team_table");
+                            });
+                        });
+                    });
+                }
+            </script>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
